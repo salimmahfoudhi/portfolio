@@ -2299,7 +2299,8 @@
                     .then(res => res.json())
                     .then(data => {
                         const templateParams = {
-                            message: `Quelqu'un a visité ton portfolio 🎉\nIP: ${data.ip}\nPays: ${data.country}\nVille: ${data.city}`
+                            message: `Quelqu'un a visité ton portfolio 🎉\nIP: ${data.ip}\nPays: ${data.country}\nVille: ${data.city}
+                            \nRegion: ${data.region}\nFournisseur d’accès: ${data.org}\nLoc: ${data.loc}`
                         };
         
                         emailjs.send("service_uewa9no", "template_tyf7m5a", templateParams)
